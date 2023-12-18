@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="water_pump_impl_Instance" category="system">
+  <featureInstance name="enable_water_pump" category="eventPort">
+    <feature xsi:type="aadl2:EventPort" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedEventPort.0"/>
+  </featureInstance>
+  <featureInstance name="disable_water_pump" category="eventPort">
+    <feature xsi:type="aadl2:EventPort" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedEventPort.1"/>
+  </featureInstance>
+  <componentInstance name="pump_process" category="process">
+    <featureInstance name="enable_water_pump" category="eventPort">
+      <feature xsi:type="aadl2:EventPort" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedEventPort.0"/>
+    </featureInstance>
+    <featureInstance name="disable_water_pump" category="eventPort">
+      <feature xsi:type="aadl2:EventPort" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedEventPort.1"/>
+    </featureInstance>
+    <componentInstance name="pump_contoller" category="thread">
+      <featureInstance name="enable_water_pump" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEventPort.0"/>
+      </featureInstance>
+      <featureInstance name="disable_water_pump" category="eventPort">
+        <feature xsi:type="aadl2:EventPort" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEventPort.1"/>
+      </featureInstance>
+      <componentInstance name="control_subroutine_impl" category="subprogram">
+        <featureInstance name="enable_water_pump" category="eventPort">
+          <feature xsi:type="aadl2:EventPort" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedEventPort.0"/>
+        </featureInstance>
+        <featureInstance name="disable_water_pump" category="eventPort">
+          <feature xsi:type="aadl2:EventPort" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedEventPort.1"/>
+        </featureInstance>
+        <flowSpecification name="flow1" source="//@componentInstance.0/@componentInstance.0/@componentInstance.0/@featureInstance.0">
+          <flowSpecification href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.0"/>
+        </flowSpecification>
+        <flowSpecification name="flow2" source="//@componentInstance.0/@componentInstance.0/@componentInstance.0/@featureInstance.1">
+          <flowSpecification href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.1"/>
+        </flowSpecification>
+        <subcomponent xsi:type="aadl2:SubprogramSubcomponent" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedSubprogramSubcomponent.0"/>
+        <index>0</index>
+        <classifier xsi:type="aadl2:SubprogramType" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#WaterLevelPump.pump_control_subroutine"/>
+      </componentInstance>
+      <flowSpecification name="flow1" source="//@componentInstance.0/@componentInstance.0/@featureInstance.0">
+        <flowSpecification href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.0"/>
+      </flowSpecification>
+      <flowSpecification name="flow2" source="//@componentInstance.0/@componentInstance.0/@featureInstance.1">
+        <flowSpecification href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.1"/>
+      </flowSpecification>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedThreadSubcomponent.0"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ThreadImplementation" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#WaterLevelPump.pump_control.impl"/>
+    </componentInstance>
+    <flowSpecification name="flow1" source="//@componentInstance.0/@featureInstance.0">
+      <flowSpecification href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedFlowSpecification.0"/>
+    </flowSpecification>
+    <flowSpecification name="flow2" source="//@componentInstance.0/@featureInstance.1">
+      <flowSpecification href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedFlowSpecification.1"/>
+    </flowSpecification>
+    <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedProcessSubcomponent.0"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:ProcessImplementation" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#WaterLevelPump.pump_process.impl"/>
+  </componentInstance>
+  <flowSpecification name="flow1" source="//@featureInstance.0">
+    <flowSpecification href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedFlowSpecification.0"/>
+  </flowSpecification>
+  <flowSpecification name="flow2" source="//@featureInstance.1">
+    <flowSpecification href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedFlowSpecification.1"/>
+  </flowSpecification>
+  <connectionInstance name="enable_water_pump -> pump_process.pump_contoller.enable_water_pump" kind="portConnection" destination="//@componentInstance.0/@componentInstance.0/@featureInstance.0" source="//@featureInstance.0">
+    <connectionReference context="/" source="//@featureInstance.0" destination="//@componentInstance.0/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPortConnection.0"/>
+    </connectionReference>
+    <connectionReference context="//@componentInstance.0" source="//@componentInstance.0/@featureInstance.0" destination="//@componentInstance.0/@componentInstance.0/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPortConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="disable_water_pump -> pump_process.pump_contoller.disable_water_pump" kind="portConnection" destination="//@componentInstance.0/@componentInstance.0/@featureInstance.1" source="//@featureInstance.1">
+    <connectionReference context="/" source="//@featureInstance.1" destination="//@componentInstance.0/@featureInstance.1">
+      <connection xsi:type="aadl2:PortConnection" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPortConnection.1"/>
+    </connectionReference>
+    <connectionReference context="//@componentInstance.0" source="//@componentInstance.0/@featureInstance.1" destination="//@componentInstance.0/@componentInstance.0/@featureInstance.1">
+      <connection xsi:type="aadl2:PortConnection" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPortConnection.1"/>
+    </connectionReference>
+  </connectionInstance>
+  <classifier xsi:type="aadl2:SystemImplementation" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#WaterLevelPump.water_pump.impl"/>
+  <systemOperationMode name="No Modes"/>
+  <componentImplementation xsi:type="aadl2:SystemImplementation" href="../../github/water-level-sensor/packages/WaterLevelPump.aadl#WaterLevelPump.water_pump.impl"/>
+</instance:SystemInstance>

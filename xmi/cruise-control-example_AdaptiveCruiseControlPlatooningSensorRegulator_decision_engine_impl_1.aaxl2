@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="decision_engine_impl_Instance" category="system">
+  <featureInstance name="enabled">
+    <feature xsi:type="aadl2:DataPort" href="../../github/cruise-control-example/packages/AbstractAdaptiveCruiseControlRegulator.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+    <type href="../../github/cruise-control-example/packages/instances/AdaptiveCruiseControlPlatooningSensorRegulator_decision_engine_impl_Instance.aaxl2#/0"/>
+  </featureInstance>
+  <featureInstance name="increase_speed_requested">
+    <feature xsi:type="aadl2:DataPort" href="../../github/cruise-control-example/packages/AbstractAdaptiveCruiseControlRegulator.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.1"/>
+    <type href="../../github/cruise-control-example/packages/instances/AdaptiveCruiseControlPlatooningSensorRegulator_decision_engine_impl_Instance.aaxl2#/0"/>
+  </featureInstance>
+  <featureInstance name="decrease_speed_requested">
+    <feature xsi:type="aadl2:DataPort" href="../../github/cruise-control-example/packages/AbstractAdaptiveCruiseControlRegulator.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.2"/>
+    <type href="../../github/cruise-control-example/packages/instances/AdaptiveCruiseControlPlatooningSensorRegulator_decision_engine_impl_Instance.aaxl2#/0"/>
+  </featureInstance>
+  <featureInstance name="data_source_1">
+    <feature xsi:type="aadl2:DataPort" href="../../github/cruise-control-example/packages/AbstractAdaptiveCruiseControlRegulator.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.3"/>
+    <type href="../../github/cruise-control-example/packages/instances/AdaptiveCruiseControlPlatooningSensorRegulator_decision_engine_impl_Instance.aaxl2#/1"/>
+  </featureInstance>
+  <featureInstance name="data_source_2">
+    <feature xsi:type="aadl2:DataPort" href="../../github/cruise-control-example/packages/AbstractAdaptiveCruiseControlRegulator.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.4"/>
+    <type href="../../github/cruise-control-example/packages/instances/AdaptiveCruiseControlPlatooningSensorRegulator_decision_engine_impl_Instance.aaxl2#/1"/>
+  </featureInstance>
+  <featureInstance name="current_speed">
+    <feature xsi:type="aadl2:DataPort" href="../../github/cruise-control-example/packages/AbstractAdaptiveCruiseControlRegulator.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.5"/>
+    <type href="../../github/cruise-control-example/packages/instances/AdaptiveCruiseControlPlatooningSensorRegulator_decision_engine_impl_Instance.aaxl2#/1"/>
+  </featureInstance>
+  <featureInstance name="increase_speed_button_pressed" category="eventDataPort">
+    <feature xsi:type="aadl2:EventDataPort" href="../../github/cruise-control-example/packages/AbstractAdaptiveCruiseControlRegulator.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventDataPort.0"/>
+    <type href="../../github/cruise-control-example/packages/instances/AdaptiveCruiseControlPlatooningSensorRegulator_decision_engine_impl_Instance.aaxl2#/0"/>
+  </featureInstance>
+  <featureInstance name="decrease_speed_button_pressed" category="eventDataPort">
+    <feature xsi:type="aadl2:EventDataPort" href="../../github/cruise-control-example/packages/AbstractAdaptiveCruiseControlRegulator.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventDataPort.1"/>
+    <type href="../../github/cruise-control-example/packages/instances/AdaptiveCruiseControlPlatooningSensorRegulator_decision_engine_impl_Instance.aaxl2#/0"/>
+  </featureInstance>
+  <featureInstance name="increase_speed" category="eventDataPort" direction="out">
+    <feature xsi:type="aadl2:EventDataPort" href="../../github/cruise-control-example/packages/AbstractAdaptiveCruiseControlRegulator.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventDataPort.2"/>
+    <type href="../../github/cruise-control-example/packages/instances/AdaptiveCruiseControlPlatooningSensorRegulator_decision_engine_impl_Instance.aaxl2#/0"/>
+  </featureInstance>
+  <featureInstance name="decrease_speed" category="eventDataPort" direction="out">
+    <feature xsi:type="aadl2:EventDataPort" href="../../github/cruise-control-example/packages/AbstractAdaptiveCruiseControlRegulator.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventDataPort.3"/>
+    <type href="../../github/cruise-control-example/packages/instances/AdaptiveCruiseControlPlatooningSensorRegulator_decision_engine_impl_Instance.aaxl2#/0"/>
+  </featureInstance>
+  <classifier xsi:type="aadl2:SystemImplementation" href="../../github/cruise-control-example/packages/AdaptiveCruiseControlPlatooningSensorRegulator.aadl#AdaptiveCruiseControlPlatooningSensorRegulator.decision_engine.impl"/>
+  <systemOperationMode name="No Modes"/>
+  <componentImplementation xsi:type="aadl2:SystemImplementation" href="../../github/cruise-control-example/packages/AdaptiveCruiseControlPlatooningSensorRegulator.aadl#AdaptiveCruiseControlPlatooningSensorRegulator.decision_engine.impl"/>
+</instance:SystemInstance>

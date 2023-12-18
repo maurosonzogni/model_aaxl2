@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="T_I_Instance" category="system">
+  <classifier xsi:type="aadl2:SystemImplementation" href="../../github/aadl-qa/tests/requality/AADL-CTS/02-Semantic/SC0006/AADL-7.1-L3-L4/02-pos/02-pos.aadl#SYSTEM_IMPLEMENTATION_TC2.T.I"/>
+  <systemOperationMode name="No Modes"/>
+  <componentImplementation xsi:type="aadl2:SystemImplementation" href="../../github/aadl-qa/tests/requality/AADL-CTS/02-Semantic/SC0006/AADL-7.1-L3-L4/02-pos/02-pos.aadl#SYSTEM_IMPLEMENTATION_TC2.T.I"/>
+</instance:SystemInstance>

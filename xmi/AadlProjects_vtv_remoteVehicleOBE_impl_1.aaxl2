@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="remoteVehicleOBE_impl_Instance" category="system">
+  <featureInstance name="rvloc" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../aadl/Data_Model.aadl#Data_Model.Real_Range"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RangeValue">
+          <minimum xsi:type="aadl2:RealLiteral"/>
+          <maximum xsi:type="aadl2:RealLiteral" value="10.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../github/AadlProjects/VTV%20final%202/vtv_variables.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../aadl/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="Meter"/>
+      </ownedValue>
+      <propertyAssociation href="../../github/AadlProjects/VTV%20final%202/vtv_variables.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:DataPort" href="../../github/AadlProjects/VTV%20final%202/vtv.aadl#/0/@ownedPublicSection/@ownedClassifier.20/@ownedDataPort.0"/>
+    <type href="../../github/AadlProjects/VTV%20final%202/instances/vtv_remoteVehicleOBE_impl_Instance.aaxl2#/"/>
+  </featureInstance>
+  <featureInstance name="vloc">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../aadl/Data_Model.aadl#Data_Model.Real_Range"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RangeValue">
+          <minimum xsi:type="aadl2:RealLiteral"/>
+          <maximum xsi:type="aadl2:RealLiteral" value="10.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../github/AadlProjects/VTV%20final%202/vtv_variables.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../aadl/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="Meter"/>
+      </ownedValue>
+      <propertyAssociation href="../../github/AadlProjects/VTV%20final%202/vtv_variables.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:DataPort" href="../../github/AadlProjects/VTV%20final%202/vtv.aadl#/0/@ownedPublicSection/@ownedClassifier.20/@ownedDataPort.1"/>
+    <type href="../../github/AadlProjects/VTV%20final%202/instances/vtv_remoteVehicleOBE_impl_Instance.aaxl2#/"/>
+  </featureInstance>
+  <featureInstance name="vloc_e" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../aadl/Data_Model.aadl#Data_Model.Real_Range"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RangeValue">
+          <minimum xsi:type="aadl2:RealLiteral"/>
+          <maximum xsi:type="aadl2:RealLiteral" value="10.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../github/AadlProjects/VTV%20final%202/vtv_variables.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../aadl/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="Meter"/>
+      </ownedValue>
+      <propertyAssociation href="../../github/AadlProjects/VTV%20final%202/vtv_variables.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:DataPort" href="../../github/AadlProjects/VTV%20final%202/vtv.aadl#/0/@ownedPublicSection/@ownedClassifier.20/@ownedDataPort.2"/>
+    <type href="../../github/AadlProjects/VTV%20final%202/instances/vtv_remoteVehicleOBE_impl_Instance.aaxl2#/"/>
+  </featureInstance>
+  <classifier xsi:type="aadl2:SystemImplementation" href="../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.remoteVehicleOBE.impl"/>
+  <systemOperationMode name="No Modes"/>
+  <componentImplementation xsi:type="aadl2:SystemImplementation" href="../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.remoteVehicleOBE.impl"/>
+</instance:SystemInstance>
